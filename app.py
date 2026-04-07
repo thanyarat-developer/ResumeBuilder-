@@ -8,7 +8,7 @@ st.set_page_config(page_title="Shutter Spec AI", page_icon="🏭", layout="cente
 
 DB_DIR = "./faiss_db"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-PDF_PATH = "catalog.pdf"
+PDF_PATH = "catalog.pdf,catalog1.pdf"
 
 # [ระบบสร้างฐานข้อมูลอัตโนมัติบน Cloud]
 if not os.path.exists(DB_DIR):
@@ -47,7 +47,7 @@ vectorstore = load_database()
 st.title("ระบบค้นหาคู่มือฝ่ายขาย")
 st.caption("เทคโนโลยี: FAISS Vector Search | พิมพ์ถามคำถามด้านล่างได้เลยครับ")
 
-query = st.text_input("💬 สอบถามข้อมูลสเปกสินค้า:", placeholder="เช่น ประตูทนไฟกันไฟได้นานกี่ชั่วโมง?")
+query = st.text_input("ค้นหาคู่มือตาข่ายตะแกรง", placeholder="เช่น วิธีการผลิตตาข่าย")
 
 if query:
     with st.spinner("AI กำลังค้นหา..."):
