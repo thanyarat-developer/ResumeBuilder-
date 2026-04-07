@@ -14,7 +14,7 @@ PDF_PATH = "catalog.pdf"
 if not os.path.exists(DB_DIR):
     st.warning("⚠️ ไม่พบฐานข้อมูล FAISS! ระบบกำลังสร้าง Knowledge Base อัตโนมัติ (อาจใช้เวลา 2-3 นาที)...")
     
-    # ---------------- 🚨 โค้ดส่วนนักสืบ (Debug) 🚨 ----------------
+    # ---------------- Debug ----------------
     if not os.path.exists(PDF_PATH):
         st.error(f"❌ ค้นหาไฟล์ชื่อ '{PDF_PATH}' ไม่เจอครับ!")
         st.info(f"📂 ไฟล์ทั้งหมดที่เซิร์ฟเวอร์มองเห็นตอนนี้คือ: {os.listdir('.')}")
@@ -44,7 +44,7 @@ def load_database():
 
 vectorstore = load_database()
 
-st.title("🏭 ระบบค้นหาสเปกประตูเหล็กม้วน (AI RAG)")
+st.title("ระบบค้นหาคู่มือฝ่ายขาย")
 st.caption("เทคโนโลยี: FAISS Vector Search | พิมพ์ถามคำถามด้านล่างได้เลยครับ")
 
 query = st.text_input("💬 สอบถามข้อมูลสเปกสินค้า:", placeholder="เช่น ประตูทนไฟกันไฟได้นานกี่ชั่วโมง?")
