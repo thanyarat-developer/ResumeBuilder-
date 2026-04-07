@@ -9,3 +9,4 @@ sentence-transformers
 faiss-cpu
 streamlit
 Pillow==9.5.0
+langchain-google-genai
