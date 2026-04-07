@@ -37,7 +37,7 @@ def load_database():
 vectorstore = load_database()
 
 st.title("ระบบค้นหาสเปกประตูเหล็กม้วน (AI RAG)")
-st.caption("เทคโนโลยี: FAISS Vector Search | พิมพ์ถามคำถามด้านล่างได้เลยครับ")
+st.caption("เทคโนโลยี: FAISS Vector Search | พิมพ์ถามคำถามด้านล่างได้เลยค่ะ")
 
 query = st.text_input("สอบถามข้อมูลสเปกสินค้า:", placeholder="เช่น ประตูทนไฟกันไฟได้นานกี่ชั่วโมง?")
 
