@@ -1,0 +1,11 @@
+# ไม่เอา Database ขึ้นไป (ขนาดใหญ่เกินไป)
+chroma_db/
+
+# ไม่เอาไฟล์ข้อมูลดิบขึ้นไป
+data/
+*.pdf
+
+# ไม่เอาไฟล์ Environment ของ Python ขึ้นไป
+venv/
+__pycache__/
+.env
