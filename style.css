@@ -1,38 +1,31 @@
-:root {
-    --primary: #2563eb;
-    --dark: #1e293b;
-    --light: #f8fafc;
-}
+:root { --primary: #2563eb; --dark: #1e293b; }
+body { font-family: 'Segoe UI', sans-serif; background: #f1f5f9; padding: 20px; }
+.app-container { max-width: 800px; margin: auto; }
 
-body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #eaeff5; margin: 0; padding: 20px; }
-.app-container { max-width: 700px; margin: auto; }
+.template-selector { margin-top: 10px; }
+.btn-sm { padding: 5px 15px; cursor: pointer; border-radius: 20px; border: 1px solid var(--primary); background: white; }
 
-header { text-align: center; margin-bottom: 20px; }
-header h1 { color: var(--primary); margin: 0; }
+.card { background: white; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+input, textarea { width: 100%; padding: 10px; margin-top: 8px; border: 1px solid #ddd; border-radius: 6px; }
 
-.card { background: white; padding: 20px; border-radius: 15px; margin-bottom: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-.card h3 { margin-top: 0; font-size: 1rem; color: var(--dark); }
+.btn-add { background: #10b981; color: white; border: none; padding: 8px; border-radius: 6px; cursor: pointer; width: 100%; margin-top: 10px; }
+.btn-download { width: 100%; padding: 15px; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 20px; }
 
-input, textarea {
-    width: 100%; padding: 12px; margin-top: 10px;
-    border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem;
-}
+/* Resume Paper Settings */
+.resume-paper { background: white; padding: 40px; min-height: 500px; margin-top: 20px; transition: 0.3s; }
 
-.btn-download {
-    width: 100%; padding: 16px; background: var(--primary); color: white;
-    border: none; border-radius: 12px; font-size: 1.1rem; font-weight: bold;
-    cursor: pointer; transition: 0.2s;
-}
-.btn-download:active { transform: scale(0.98); }
+/* Modern Template */
+.modern .resume-header { border-left: 10px solid var(--primary); padding-left: 20px; }
+.modern .section-title { color: var(--primary); border-bottom: 2px solid var(--primary); margin-top: 20px; font-weight: bold; }
 
-/* พื้นที่กระดาษ PDF */
-.resume-paper {
-    background: white; padding: 40px; margin-top: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-radius: 4px;
-}
-.resume-header { border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
-.sub-title { color: var(--primary); font-weight: bold; margin-top: 5px; }
-.section-title { background: #f1f5f9; padding: 5px 10px; font-weight: bold; margin-top: 15px; border-left: 4px solid var(--primary); }
-.text-block { line-height: 1.6; white-space: pre-line; }
-.skills-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
-.skill-item { background: #dbeafe; color: var(--primary); padding: 3px 10px; border-radius: 5px; font-size: 0.85rem; }
+/* Classic Template */
+.classic .resume-header { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; }
+.classic .section-title { background: #333; color: white; padding: 5px 10px; margin-top: 20px; text-transform: uppercase; }
+
+/* Exp Item Layout */
+.exp-row { display: flex; margin-top: 10px; gap: 20px; }
+.exp-year { min-width: 120px; font-weight: bold; color: var(--gray); }
+.exp-desc { flex: 1; white-space: pre-line; }
+
+.skills-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.skill-item { background: #e2e8f0; padding: 4px 12px; border-radius: 4px; font-size: 0.9rem; }
