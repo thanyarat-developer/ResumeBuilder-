@@ -5,9 +5,6 @@ __pycache__/
 *.pyc
 .env
 
-# Database & Storage
-chroma_db/
-
 # Data source (ไม่เอาไฟล์เอกสารของบริษัทขึ้น Public)
 data/
 *.pdf
