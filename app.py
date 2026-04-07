@@ -9,7 +9,7 @@ st.set_page_config(page_title="Shutter Spec AI", page_icon="🏭", layout="cente
 
 DB_DIR = "./faiss_db"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-PDF_PATH = "แคตตาล็อค 593-2562 (ใหม่).pdf"
+PDF_PATH = "catalog.pdf"
 
 # [ระบบสร้างฐานข้อมูลอัตโนมัติบน Cloud]
 if not os.path.exists(DB_DIR):
